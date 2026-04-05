@@ -1,0 +1,1 @@
+{"version":3,"file":"bscTestnet.d.ts","sourceRoot":"","sources":["../../../src/constants/hooksList/bscTestnet.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,aAAa,EAAE,SAAS,EAAE,KAAK,QAAQ,EAAE,KAAK,QAAQ,EAAE,MAAM,aAAa,CAAA;AAGpF,eAAO,MAAM,eAAe;;;;;;;;;;;;;CAa3B,CAAA;AAmBD,eAAO,MAAM,mBAAmB,EAAE,QAAQ,EA+BzC,CAAA;AAED;;GAEG;AACH,eAAO,MAAM,sBAAsB,EAAE,MAAM,CAAC,QAAQ,EAAE,QAAQ,CAG7D,CAAA"}

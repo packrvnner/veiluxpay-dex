@@ -1,0 +1,1 @@
+{"version":3,"file":"isInfinityBinPool.d.ts","sourceRoot":"","sources":["../../src/utils/isInfinityBinPool.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,IAAI,EAAE,MAAM,0BAA0B,CAAA;AAGpD,OAAO,EAAE,eAAe,EAAE,kBAAkB,EAAE,MAAM,UAAU,CAAA;AAE9D,wBAAgB,iBAAiB,CAAC,CAAC,EAAE,IAAI,GAAG,CAAC,IAAI,eAAe,CAE/D;AAED,wBAAgB,oBAAoB,CAAC,CAAC,EAAE,IAAI,GAAG,CAAC,IAAI,kBAAkB,CAErE"}

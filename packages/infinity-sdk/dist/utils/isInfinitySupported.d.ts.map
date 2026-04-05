@@ -1,0 +1,1 @@
+{"version":3,"file":"isInfinitySupported.d.ts","sourceRoot":"","sources":["../../src/utils/isInfinitySupported.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAA;AAE7C,OAAO,EAAE,yBAAyB,EAAE,MAAM,cAAc,CAAA;AAExD,KAAK,sBAAsB,GAAG,CAAC,OAAO,yBAAyB,CAAC,CAAC,MAAM,CAAC,CAAA;AAExE,wBAAgB,mBAAmB,CAAC,OAAO,EAAE,OAAO,GAAG,OAAO,IAAI,sBAAsB,CAEvF"}

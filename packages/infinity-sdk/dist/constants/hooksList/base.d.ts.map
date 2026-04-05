@@ -1,0 +1,1 @@
+{"version":3,"file":"base.d.ts","sourceRoot":"","sources":["../../../src/constants/hooksList/base.ts"],"names":[],"mappings":"AAEA,OAAO,EAAsC,KAAK,QAAQ,EAAE,KAAK,QAAQ,EAAE,MAAM,aAAa,CAAA;AAG9F,eAAO,MAAM,eAAe,EAAE,QAmB7B,CAAA;AAID,eAAO,MAAM,aAAa,EAAE,QAAQ,EAA0B,CAAA;AAE9D;;GAEG;AACH,eAAO,MAAM,gBAAgB,EAAE,MAAM,CAAC,QAAQ,EAAE,QAAQ,GAAG,SAAS,CAGnE,CAAA"}

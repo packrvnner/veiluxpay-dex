@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"export PATH=\\\"$PATH:/c/Program Files/GitHub CLI\\\" && cd ~/Desktop/veiluxpay-dex && git push -u origin develop --force 2>&1\",\"timeout\":180000,\"description\":\"Force push to GitHub\"}",
+  "error": "Exit code 1\nremote: fatal: did not receive expected object 7877802de56b281d08d8e572ff48b215d1733d7c        \nerror: remote unpack failed: index-pack failed\nTo https://github.com/packrvnner/veiluxpay-dex.git\n ! [remote rejected] develop -> develop (failed)\nerror: failed to push some refs to 'https://github.com/packrvnner/veiluxpay-dex.git'",
+  "timestamp": "2026-04-05T18:09:37.144Z",
+  "retry_count": 2
+}

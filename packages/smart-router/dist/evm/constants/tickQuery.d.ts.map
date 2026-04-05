@@ -1,0 +1,1 @@
+{"version":3,"file":"tickQuery.d.ts","sourceRoot":"","sources":["../../../evm/constants/tickQuery.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAA;AAC7C,OAAO,EAAE,OAAO,EAAE,MAAM,MAAM,CAAA;AAE9B,eAAO,MAAM,2BAA2B,EAAE,OAAO,CAAC,MAAM,CAAC,OAAO,EAAE,OAAO,CAAC,CAiBzE,CAAA"}

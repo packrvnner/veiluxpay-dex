@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../evm/infinity-router/index.ts"],"names":[],"mappings":"AAAA,cAAc,aAAa,CAAA;AAC3B,cAAc,WAAW,CAAA;AACzB,OAAO,KAAK,SAAS,MAAM,UAAU,CAAA;AACrC,cAAc,SAAS,CAAA;AACvB,OAAO,KAAK,WAAW,MAAM,eAAe,CAAA;AAE5C,cAAc,UAAU,CAAA;AAExB,mBAAmB,2BAA2B,CAAA;AAC9C,YAAY,EAAE,aAAa,EAAE,aAAa,EAAE,yBAAyB,EAAE,MAAM,SAAS,CAAA"}

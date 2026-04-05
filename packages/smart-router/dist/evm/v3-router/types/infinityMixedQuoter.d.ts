@@ -1,0 +1,9 @@
+export declare enum InfinityMixedQuoterActions {
+    SS_2_EXACT_INPUT_SINGLE = 0,
+    SS_3_EXACT_INPUT_SINGLE = 1,
+    V2_EXACT_INPUT_SINGLE = 2,
+    V3_EXACT_INPUT_SINGLE = 3,
+    INFI_CL_EXACT_INPUT_SINGLE = 4,
+    INFI_BIN_EXACT_INPUT_SINGLE = 5
+}
+//# sourceMappingURL=infinityMixedQuoter.d.ts.map
