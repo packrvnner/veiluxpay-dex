@@ -134,7 +134,7 @@ export const VeMainView = ({
           <Message variant="danger" mb="12px">
             <Text color="danger">
               {t(
-                'Hold some VLX in your wallet or on VeiluxPay at the snapshot block to get voting power for future proposals.',
+                'Hold some VLX in your wallet or on HexPay at the snapshot block to get voting power for future proposals.',
               )}
             </Text>
           </Message>
@@ -252,7 +252,7 @@ const MainView: React.FC<React.PropsWithChildren<MainViewProps>> = ({
               <Message variant="danger" mb="12px">
                 <Text color="danger">
                   {t(
-                    'Hold some VLX in your wallet or on VeiluxPay at the snapshot block to get voting power for future proposals.',
+                    'Hold some VLX in your wallet or on HexPay at the snapshot block to get voting power for future proposals.',
                   )}
                 </Text>
               </Message>

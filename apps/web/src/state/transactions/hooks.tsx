@@ -351,13 +351,13 @@ export function useCrossChainFarmPendingTransaction(lpAddress?: string): CrossCh
 
 export const getReadableTransactionType = (t, type?: TransactionType) => {
   if (type === undefined) {
-    return t('VeiluxPay AMM')
+    return t('HexPay AMM')
   }
   switch (type) {
     case 'approve':
       return t('Token Approval')
     case 'swap':
-      return t('VeiluxPay AMM')
+      return t('HexPay AMM')
     case 'wrap':
       return t('Wrap Native Token')
     case 'add-liquidity':

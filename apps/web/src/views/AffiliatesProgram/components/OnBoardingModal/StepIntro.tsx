@@ -37,7 +37,7 @@ const IntroSteps = [
     icon: '/images/affiliates-program/slider/3.png',
     description: (
       <Trans>
-        Earn VLX tokens on most trades made on VeiluxPay. Stake for more rewards or use them in our Lottery and
+        Earn VLX tokens on most trades made on HexPay. Stake for more rewards or use them in our Lottery and
         Pottery
       </Trans>
     ),

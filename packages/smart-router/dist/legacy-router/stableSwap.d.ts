@@ -19,15 +19,15 @@ interface Options<TInput extends Currency, TOutput extends Currency, TTradeType 
 }
 export declare function createTradeWithStableSwap<TInput extends Currency, TOutput extends Currency>({ routeType, pairs, inputAmount, outputAmount, tradeType, }: Options<TInput, TOutput, TradeType>): {
     tradeType: TradeType;
-    inputAmount: CurrencyAmount<TInput_1>;
-    outputAmount: CurrencyAmount<TOutput_1>;
-    route: RouteWithStableSwap<any, any>;
+    inputAmount: CurrencyAmount<TInput>;
+    outputAmount: CurrencyAmount<TOutput>;
+    route: RouteWithStableSwap<TInput, TOutput>;
 };
 export declare function createTradeWithStableSwapFromV2Trade<TIn extends Currency, TOut extends Currency>({ tradeType, inputAmount, outputAmount, route: { pairs }, }: Trade<TIn, TOut, TradeType>): {
     tradeType: TradeType;
-    inputAmount: CurrencyAmount<TInput>;
-    outputAmount: CurrencyAmount<TOutput>;
-    route: RouteWithStableSwap<any, any>;
+    inputAmount: CurrencyAmount<TIn>;
+    outputAmount: CurrencyAmount<TOut>;
+    route: RouteWithStableSwap<TIn, TOut>;
 };
 export declare function getFeePercent(inputAmount: CurrencyAmount<Currency>, outputAmount: CurrencyAmount<Currency>, { fee, adminFee }: StableSwapFeeRaw): StableSwapFeePercent;
 export {};

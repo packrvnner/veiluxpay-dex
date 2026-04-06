@@ -144,7 +144,7 @@ const config: (
             supportChainIds: SUPPORT_FARMS,
           },
           {
-            label: t('Veilux Vaults'),
+            label: t('Hex Vaults'),
             href: '/pools',
             supportChainIds: POOL_SUPPORTED_CHAINS,
           },
@@ -215,7 +215,7 @@ const config: (
           },
           {
             label: t('Docs'),
-            href: 'https://docs.veiluxpay.com',
+            href: 'https://docs.hexpay.org',
             type: DropdownMenuItemType.EXTERNAL_LINK,
           },
         ],

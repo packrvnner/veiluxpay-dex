@@ -1,0 +1,24 @@
+
+> @pancakeswap/smart-router@7.6.0 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\smart-router
+> tsup
+
+[34mCLI[39m Building entry: {"evm":"evm/index.ts","legacy-router":"legacy-router/index.ts"}
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v6.7.0
+[34mCLI[39m Using tsup config: C:\Users\olxxx\Desktop\veiluxpay-dex\packages\smart-router\tsup.config.ts
+[34mCLI[39m Target: es2020
+[34mCLI[39m Cleaning output folder
+[34mESM[39m Build start
+[34mCJS[39m Build start
+"Fraction" and "Rounding" are imported from external module "@pancakeswap/swap-sdk-core" but never used in "dist/evm.mjs".
+"Native" is imported from external module "@pancakeswap/sdk" but never used in "dist/chunk-WSX2CA5I.mjs".
+"Fraction" and "Rounding" are imported from external module "@pancakeswap/swap-sdk-core" but never used in "dist/evm.js".
+"Native" is imported from external module "@pancakeswap/sdk" but never used in "dist/chunk-H57NM25L.js".
+[32mESM[39m [1mdist\evm.mjs            [22m[32m329.51 KB[39m
+[32mESM[39m [1mdist\chunk-WSX2CA5I.mjs [22m[32m52.24 KB[39m
+[32mESM[39m [1mdist\legacy-router.mjs  [22m[32m27.56 KB[39m
+[32mESM[39m ⚡️ Build success in 676ms
+[32mCJS[39m [1mdist\chunk-H57NM25L.js [22m[32m55.71 KB[39m
+[32mCJS[39m [1mdist\legacy-router.js  [22m[32m27.95 KB[39m
+[32mCJS[39m [1mdist\evm.js            [22m[32m337.18 KB[39m
+[32mCJS[39m ⚡️ Build success in 677ms

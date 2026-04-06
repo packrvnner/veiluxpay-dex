@@ -1,6 +1,6 @@
 import { ERC20Token } from '@pancakeswap/sdk';
 export declare const goerliTestnetTokens: {
-    cake: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    cake: ERC20Token;
     weth: ERC20Token;
     celr: ERC20Token;
     leet: ERC20Token;

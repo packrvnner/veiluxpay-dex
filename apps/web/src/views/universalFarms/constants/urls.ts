@@ -8,5 +8,5 @@ export const ETHENA_JOIN_URL = 'https://app.ethena.fi/join'
 /** Falcon miles program URL */
 export const FALCON_MILES_URL = 'https://app.falcon.finance/miles'
 
-/** VeiluxPay farms documentation URL */
+/** HexPay farms documentation URL */
 export const FARMS_DOCS_URL = 'https://docs.pancakeswap.finance/products/yield-farming/how-to-use-farms'

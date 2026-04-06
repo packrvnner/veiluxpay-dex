@@ -83,7 +83,7 @@ export function useIncentraInfo(poolAddress?: string): {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          campaign_type: INCENTRA_CAMPAIGN_TYPES, // VeiluxPay + Infinity campaigns
+          campaign_type: INCENTRA_CAMPAIGN_TYPES, // HexPay + Infinity campaigns
           status: [4], // ACTIVE
         }),
       })

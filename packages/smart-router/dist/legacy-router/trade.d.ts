@@ -1,4 +1,4 @@
-import { Currency, TradeType, Percent, CurrencyAmount } from '@pancakeswap/sdk';
+import { Currency, TradeType, Percent, CurrencyAmount, Price } from '@pancakeswap/sdk';
 import { TradeWithStableSwap } from './types';
 export declare const Trade: {
     maximumAmountIn: typeof maximumAmountIn;
@@ -14,7 +14,7 @@ declare function maximumAmountIn<TIn extends Currency, TOut extends Currency, TT
  * Get the minimum amount that must be received from this trade for the given slippage tolerance
  */
 declare function minimumAmountOut<TIn extends Currency, TOut extends Currency, TTradeType extends TradeType>(trade: TradeWithStableSwap<TIn, TOut, TTradeType>, slippageTolerance: Percent): CurrencyAmount<TOut>;
-declare function executionPrice<TIn extends Currency, TOut extends Currency, TTradeType extends TradeType>({ inputAmount, outputAmount, }: TradeWithStableSwap<TIn, TOut, TTradeType>): any;
-declare function priceImpact<TIn extends Currency, TOut extends Currency, TTradeType extends TradeType>({ route, inputAmount, outputAmount, }: TradeWithStableSwap<TIn, TOut, TTradeType>): any;
+declare function executionPrice<TIn extends Currency, TOut extends Currency, TTradeType extends TradeType>({ inputAmount, outputAmount, }: TradeWithStableSwap<TIn, TOut, TTradeType>): Price<TIn, TOut>;
+declare function priceImpact<TIn extends Currency, TOut extends Currency, TTradeType extends TradeType>({ route, inputAmount, outputAmount, }: TradeWithStableSwap<TIn, TOut, TTradeType>): Percent;
 export {};
 //# sourceMappingURL=trade.d.ts.map

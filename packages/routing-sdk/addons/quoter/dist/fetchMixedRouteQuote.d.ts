@@ -41,7 +41,7 @@ export declare function buildMixedRouteQuoteCall<P extends SupportedPool = Suppo
         readonly type: "function";
     }];
     readonly functionName: "quoteExactInput";
-    readonly args: readonly [`0x${string}`, any, any];
+    readonly args: readonly [`0x${string}`, (0n | 1n | 2n | 3n | -1n)[], bigint];
 };
 export {};
 //# sourceMappingURL=fetchMixedRouteQuote.d.ts.map

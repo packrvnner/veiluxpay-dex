@@ -1,0 +1,26 @@
+
+> @pancakeswap/wagmi@3.1.0 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\wagmi
+> tsup
+
+[34mCLI[39m Building entry: {"index":"src/index.ts","connectors/blocto":"connectors/blocto/index.ts","connectors/trustWallet":"connectors/trustWallet/index.ts"}
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v6.7.0
+[34mCLI[39m Using tsup config: C:\Users\olxxx\Desktop\veiluxpay-dex\packages\wagmi\tsup.config.ts
+[34mCLI[39m Target: es2015
+[34mESM[39m Build start
+[34mCJS[39m Build start
+[32mESM[39m [1mdist\connectors\trustWallet.mjs [22m[32m4.35 KB[39m
+[32mESM[39m [1mdist\connectors\blocto.mjs      [22m[32m5.23 KB[39m
+[32mESM[39m [1mdist\chunk-V5LXLS2A.mjs         [22m[32m1.14 KB[39m
+[32mESM[39m [1mdist\index.mjs                  [22m[32m8.23 KB[39m
+[32mESM[39m ⚡️ Build success in 162ms
+[32mCJS[39m [1mdist\chunk-MH6DFUPV.js         [22m[32m1.18 KB[39m
+[32mCJS[39m [1mdist\index.js                  [22m[32m8.72 KB[39m
+[32mCJS[39m [1mdist\connectors\trustWallet.js [22m[32m4.55 KB[39m
+[32mCJS[39m [1mdist\connectors\blocto.js      [22m[32m5.54 KB[39m
+[32mCJS[39m ⚡️ Build success in 209ms
+[34mDTS[39m Build start
+[32mDTS[39m ⚡️ Build success in 9871ms
+[32mDTS[39m [1mdist\index.d.ts                  [22m[32m4.37 KB[39m
+[32mDTS[39m [1mdist\connectors\blocto.d.ts      [22m[32m630.00 B[39m
+[32mDTS[39m [1mdist\connectors\trustWallet.d.ts [22m[32m581.00 B[39m

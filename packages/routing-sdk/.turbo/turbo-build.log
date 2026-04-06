@@ -1,0 +1,18 @@
+
+> @pancakeswap/routing-sdk@0.5.5 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\routing-sdk
+> tsup
+
+[34mCLI[39m Building entry: {"index":"./src/index.ts"}
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v6.7.0
+[34mCLI[39m Using tsup config: C:\Users\olxxx\Desktop\veiluxpay-dex\packages\routing-sdk\tsup.config.ts
+[34mCLI[39m Target: es2020
+[34mCLI[39m Cleaning output folder
+[34mESM[39m Build start
+[34mCJS[39m Build start
+"Rounding" is imported from external module "@pancakeswap/swap-sdk-core" but never used in "dist/index.mjs".
+[32mESM[39m [1mdist\index.mjs [22m[32m36.24 KB[39m
+[32mESM[39m ⚡️ Build success in 1343ms
+[32mCJS[39m [1mdist\index.js [22m[32m37.59 KB[39m
+"Rounding" is imported from external module "@pancakeswap/swap-sdk-core" but never used in "dist/index.js".
+[32mCJS[39m ⚡️ Build success in 1447ms

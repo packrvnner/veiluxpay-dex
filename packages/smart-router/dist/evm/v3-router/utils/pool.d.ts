@@ -1,4 +1,4 @@
-import { Currency, Price } from '@pancakeswap/sdk';
+import { Currency, Pair, Price } from '@pancakeswap/sdk';
 import { computePoolAddress } from '@pancakeswap/v3-sdk';
 import { Address } from 'viem';
 import { InfinityBinPool, InfinityClPool, InfinityStablePool, Pool, StablePool, V2Pool, V3Pool } from '../types';
@@ -8,12 +8,14 @@ export declare function isStablePool(pool: Pool): pool is StablePool;
 export declare function isInfinityBinPool(pool: Pool): pool is InfinityBinPool;
 export declare function isInfinityClPool(pool: Pool): pool is InfinityClPool;
 export declare function isInfinityStablePool(pool: Pool): pool is InfinityStablePool;
-export declare function involvesCurrency(pool: Pool, currency: Currency): any;
+export declare function involvesCurrency(pool: Pool, currency: Currency): boolean | undefined;
 export declare function getOutputCurrency(pool: Pool, currencyIn: Currency): Currency;
 export declare const computeV3PoolAddress: typeof computePoolAddress & {
     cache: Map<any, `0x${string}`>;
 };
-export declare const computeV2PoolAddress: any;
+export declare const computeV2PoolAddress: typeof Pair.getAddress & {
+    cache: Map<any, `0x${string}`>;
+};
 export declare const getPoolAddress: (pool: Pool) => Address | "";
 export declare const getPoolCurrency0: (pool: Pool) => Currency;
 export declare const getPoolCurrency1: (pool: Pool) => Currency;

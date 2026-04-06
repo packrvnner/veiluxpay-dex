@@ -13,7 +13,7 @@ export const ShareGiftLinkButton: React.FC<ShareGiftLinkButtonProps> = ({ text, 
 
   const handleShare = useCallback(async () => {
     const shareData = {
-      title: t('Gift from VeiluxPay!'),
+      title: t('Gift from HexPay!'),
       text,
     }
 

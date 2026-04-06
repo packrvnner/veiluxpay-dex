@@ -45,7 +45,7 @@ const EnableNotificationsTooltip = ({
         tooltipContent={
           <Text as="p">
             {t(
-              'By Subscribing to VeiluxPay Notifications you will be able to receive updates on your buy crypto purchases',
+              'By Subscribing to HexPay Notifications you will be able to receive updates on your buy crypto purchases',
             )}
           </Text>
         }

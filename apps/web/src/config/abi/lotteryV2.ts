@@ -353,7 +353,7 @@ export const lotteryV2ABI = [
     outputs: [
       {
         components: [
-          { internalType: 'enum VeiluxPayLottery.Status', name: 'status', type: 'uint8' },
+          { internalType: 'enum HexPayLottery.Status', name: 'status', type: 'uint8' },
           { internalType: 'uint256', name: 'startTime', type: 'uint256' },
           { internalType: 'uint256', name: 'endTime', type: 'uint256' },
           { internalType: 'uint256', name: 'priceTicketInCake', type: 'uint256' },
@@ -367,7 +367,7 @@ export const lotteryV2ABI = [
           { internalType: 'uint256', name: 'amountCollectedInCake', type: 'uint256' },
           { internalType: 'uint32', name: 'finalNumber', type: 'uint32' },
         ],
-        internalType: 'struct VeiluxPayLottery.Lottery',
+        internalType: 'struct HexPayLottery.Lottery',
         name: '',
         type: 'tuple',
       },

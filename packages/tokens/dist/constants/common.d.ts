@@ -1,3 +1,4 @@
+import { NonEVMChainId } from '@pancakeswap/chains';
 import { ERC20Token } from '@pancakeswap/sdk';
 export declare const CAKE_MAINNET: ERC20Token;
 export declare const CAKE_TESTNET: ERC20Token;
@@ -13,23 +14,72 @@ export declare const BUSD_TESTNET: ERC20Token;
 export declare const BUSD_ETH: ERC20Token;
 export declare const BUSD_GOERLI: ERC20Token;
 export declare const BUSD: {
-    [x: number]: ERC20Token;
+    1: ERC20Token;
+    5: ERC20Token;
+    56: ERC20Token;
+    97: ERC20Token;
+    324: ERC20Token;
+    10143: ERC20Token;
 };
 export declare const CAKE: {
-    [x: number]: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    1: ERC20Token;
+    5: ERC20Token;
+    56: ERC20Token;
+    97: ERC20Token;
+    280: ERC20Token;
+    324: ERC20Token;
+    42161: ERC20Token;
+    421613: ERC20Token;
+    59144: ERC20Token;
+    8453: ERC20Token;
+    143: ERC20Token;
+    84531: ERC20Token;
+    59140: ERC20Token;
+    204: ERC20Token;
+    5611: ERC20Token;
+    8000001001: import("@pancakeswap/sdk").SPLToken;
 };
 export declare const USDC: {
-    [x: number]: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    56: ERC20Token;
+    97: ERC20Token;
+    1: ERC20Token;
+    5: ERC20Token;
+    324: ERC20Token;
+    280: ERC20Token;
+    42161: ERC20Token;
+    421613: ERC20Token;
+    59144: ERC20Token;
+    59140: ERC20Token;
+    84531: ERC20Token;
+    8453: ERC20Token;
+    5611: ERC20Token;
+    534351: ERC20Token;
+    11155111: ERC20Token;
+    421614: ERC20Token;
+    84532: ERC20Token;
+    143: ERC20Token;
+    10143: ERC20Token;
+    8000001001: import("@pancakeswap/sdk").SPLToken;
 };
 export declare const USD1: {
-    [x: number]: ERC20Token;
+    56: ERC20Token;
 };
 export declare const USDT: {
-    [x: number]: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    56: ERC20Token;
+    1: ERC20Token;
+    42161: ERC20Token;
+    324: ERC20Token;
+    5611: ERC20Token;
+    204: ERC20Token;
+    59144: ERC20Token;
+    8453: ERC20Token;
+    143: ERC20Token;
+    10143: ERC20Token;
+    8000001001: import("@pancakeswap/sdk").SPLToken;
 };
 export declare const WSOL: {
-    [x: number]: {
-        id: any;
+    8000001001: {
+        id: NonEVMChainId;
         address: string;
         decimal: number;
         name: string;
@@ -38,8 +88,8 @@ export declare const WSOL: {
     };
 };
 export declare const RAY: {
-    [x: number]: {
-        id: any;
+    8000001001: {
+        id: NonEVMChainId;
         address: string;
         decimal: number;
         name: string;
@@ -48,8 +98,8 @@ export declare const RAY: {
     };
 };
 export declare const mSOL: {
-    [x: number]: {
-        id: any;
+    8000001001: {
+        id: NonEVMChainId;
         address: string;
         decimal: number;
         name: string;
@@ -58,10 +108,34 @@ export declare const mSOL: {
     };
 };
 export declare const DAI: {
-    [x: number]: ERC20Token;
+    42161: ERC20Token;
+    8453: ERC20Token;
+    56: ERC20Token;
+    1: ERC20Token;
+    324: ERC20Token;
+    59144: ERC20Token;
 };
 export declare const WBTC_ETH: ERC20Token;
 export declare const STABLE_COIN: {
-    [x: number]: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    1: ERC20Token;
+    5: ERC20Token;
+    56: ERC20Token;
+    97: ERC20Token;
+    42161: ERC20Token;
+    421613: ERC20Token;
+    324: ERC20Token;
+    280: ERC20Token;
+    59144: ERC20Token;
+    59140: ERC20Token;
+    204: ERC20Token;
+    5611: ERC20Token;
+    8453: ERC20Token;
+    84531: ERC20Token;
+    534351: ERC20Token;
+    11155111: ERC20Token;
+    421614: ERC20Token;
+    84532: ERC20Token;
+    143: ERC20Token;
+    10143: ERC20Token;
 };
 //# sourceMappingURL=common.d.ts.map

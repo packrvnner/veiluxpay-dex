@@ -7,7 +7,7 @@ import { generateCreateGiftParams } from './generateCreateGiftParams'
 
 // Mock tokens for testing
 const BNB = Native.onChain(56) // BSC native token
-const VLX = new ERC20Token(56, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'VLX', 'VeiluxPay Token')
+const VLX = new ERC20Token(56, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'VLX', 'HexPay Token')
 
 // Constants
 const EIGHTEEN_DECIMALS = 10n ** 18n

@@ -8,5 +8,5 @@ export const BSCMevGuardChain = {
       http: ['https://bscrpc.pancakeswap.finance'],
     },
   },
-  name: 'VeiluxPay MEV Guard',
+  name: 'HexPay MEV Guard',
 } satisfies Chain

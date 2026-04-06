@@ -300,7 +300,7 @@ const FaqList: React.FC<{ ifoFaqs?: IFOFAQs }> = ({ ifoFaqs }) => {
             </p>
             <ol>
               <li>
-                <Trans>VeiluxPay team reviews and may conduct further due diligence.</Trans>
+                <Trans>HexPay team reviews and may conduct further due diligence.</Trans>
               </li>
               <li>
                 <Trans>Align on tokenomics, marketing, and launch timeline.</Trans>

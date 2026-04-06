@@ -34,7 +34,7 @@ const config = [
       </Box>,
       <Box mt="1rem">
         <Trans>
-          In the Public Sale, everyone with an active VeiluxPay profile can commit. However the maximum amount of VLX
+          In the Public Sale, everyone with an active HexPay profile can commit. However the maximum amount of VLX
           users can commit, is equal to the number of iVLX they have.
         </Trans>
       </Box>,
@@ -76,7 +76,7 @@ const config = [
       </Box>,
       <Box mt="1rem">
         <Trans>
-          Just remember: you need an active VeiluxPay Profile in order to participate in Private and Public Sales.
+          Just remember: you need an active HexPay Profile in order to participate in Private and Public Sales.
         </Trans>
       </Box>,
     ],

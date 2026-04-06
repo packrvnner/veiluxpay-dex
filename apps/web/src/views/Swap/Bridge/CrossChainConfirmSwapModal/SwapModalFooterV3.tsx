@@ -23,7 +23,7 @@ import { Field } from 'state/swap/actions'
 import { styled } from 'styled-components'
 import { warningSeverity } from 'utils/exchange'
 
-import { VeiluxPayXTag } from 'components/VeiluxPayXTag'
+import { HexPayXTag } from 'components/PancakeSwapXTag'
 import { paymasterInfo } from 'config/paymaster'
 import { usePaymaster } from 'hooks/usePaymaster'
 import { isAddressEqual } from 'utils'
@@ -314,7 +314,7 @@ export const SwapModalFooterV3 = memo(function SwapModalFooterV3({
             <RowFixed>
               <Text fontSize="14px">{t('Route')}</Text>
             </RowFixed>
-            <VeiluxPayXTag fontSize="14px" />
+            <HexPayXTag fontSize="14px" />
           </RowBetween>
         )}
         {isPaymasterAvailable && isPaymasterTokenActive && (

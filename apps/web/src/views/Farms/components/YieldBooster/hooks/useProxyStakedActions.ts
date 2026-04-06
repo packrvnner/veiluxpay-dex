@@ -8,7 +8,7 @@ import { useGasPrice } from 'state/user/hooks'
 import { MasterChefContractType, harvestFarm, stakeFarm, unstakeFarm } from 'utils/calls/farms'
 import { useBCakeProxyContractAddress } from 'hooks/useBCakeProxyContractAddress'
 import { useApproveBoostProxyFarm } from '../../../hooks/useApproveFarm'
-import useProxyVLXBalance from './useProxyVLXBalance'
+import useProxyVLXBalance from './useProxyCAKEBalance'
 
 export default function useProxyStakedActions(pid, lpContract) {
   const { account, chainId } = useAccountActiveChain()

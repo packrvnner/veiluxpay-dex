@@ -122,7 +122,7 @@ export const XRoutesBreakdown = memo(function XRoutesBreakdown({ wrapperStyle, l
               onClick={() => setIsOpen(true)}
               endIcon={<PoolTypeIcon color={theme.colors.primary60} width={20} ml="2px" />}
             >
-              <Text fontSize="14px">VeiluxPay X</Text>
+              <Text fontSize="14px">HexPay X</Text>
             </RoutesDisplayButtonView>
             <ModalV2 isOpen={isOpen} onDismiss={onDismiss} closeOnOverlayClick>
               <RoutingSettingsModalContent />

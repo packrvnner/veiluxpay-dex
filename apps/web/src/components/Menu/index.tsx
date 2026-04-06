@@ -62,7 +62,7 @@ const Menu = (props) => {
   const isLaunchpadBaseRoute = useLaunchpadBaseExperience()
 
   const [onPerpConfirmModalPresent] = useModal(
-    <USCitizenConfirmModal title={t('VeiluxPay Perpetuals')} id={IdType.PERPETUALS} href={perpUrl} />,
+    <USCitizenConfirmModal title={t('HexPay Perpetuals')} id={IdType.PERPETUALS} href={perpUrl} />,
     true,
     false,
     'perpConfirmModal',

@@ -67,7 +67,7 @@ export declare function buildV3QuoteCall<P extends SupportedPool = SupportedPool
         readonly type: "function";
     }];
     readonly functionName: "quoteExactInput" | "quoteExactOutput";
-    readonly args: readonly [`0x${string}`, any];
+    readonly args: readonly [`0x${string}`, bigint];
 };
 export declare const fetchV3Quote: FetchQuote<SupportedPool>;
 export {};

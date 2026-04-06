@@ -47,7 +47,7 @@ const ProviderCampaign = () => {
           }
           tooltipContent={
             <Text as="p">
-              {t('Provider fees are waived for this period. Please note that a 1% VeiluxPay fee still applies.')}
+              {t('Provider fees are waived for this period. Please note that a 1% HexPay fee still applies.')}
             </Text>
           }
         />

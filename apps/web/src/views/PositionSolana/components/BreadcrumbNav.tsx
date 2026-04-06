@@ -13,7 +13,7 @@ export const BreadcrumbNav: React.FC = () => {
 
   return (
     <>
-      <NextSeo title={t('%poolSymbol% position | VeiluxPay', { poolSymbol })} />
+      <NextSeo title={t('%poolSymbol% position | HexPay', { poolSymbol })} />
 
       <Flex justifyContent="space-between">
         <Breadcrumbs mb="32px">

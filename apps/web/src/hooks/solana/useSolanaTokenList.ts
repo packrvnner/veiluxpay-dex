@@ -14,7 +14,7 @@ import { QUERY_SETTINGS_IMMUTABLE } from 'config/constants'
 // Custom hook for individual token list queries
 function useTokenListQuery(listKey: TokenListKey, enabled: boolean) {
   const listSettings = useAtomValue(solanaListSettingsAtom)
-  // VeiluxPay list is always enabled
+  // HexPay list is always enabled
   const isEnabled = listKey === TokenListKey.PANCAKESWAP ? true : listSettings[listKey]
   const listConfig = SOLANA_LISTS_CONFIG[listKey]
 

@@ -155,16 +155,16 @@ const V3AirdropModal: React.FC = () => {
   const textDisplay = (): string => {
     if (hasPart1 && hasPart2) {
       return t(
-        'You have received an exclusive v3 Legendary and v3 Early Supporter NFT, as well as a VLX airdrop for participating in the VeiluxPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+        'You have received an exclusive v3 Legendary and v3 Early Supporter NFT, as well as a VLX airdrop for participating in the HexPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
       )
     }
     if (hasPart1) {
       return t(
-        'You have received an exclusive v3 Legendary NFT and VLX airdrop for participating in the VeiluxPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+        'You have received an exclusive v3 Legendary NFT and VLX airdrop for participating in the HexPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
       )
     }
     return t(
-      'You have received an exclusive v3 Early Supporter NFT and VLX airdrop for participating in the VeiluxPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
+      'You have received an exclusive v3 Early Supporter NFT and VLX airdrop for participating in the HexPay v3 Launch campaign. Claim your reward now and enjoy the benefits of being an early adopter!',
     )
   }
 

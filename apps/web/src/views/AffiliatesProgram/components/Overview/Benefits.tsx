@@ -79,7 +79,7 @@ const Benefits = () => {
       <Flex alignItems="center" flexDirection="column" justifyContent="center">
         <GradientLogo height="36px" width="36px" mb="24px" />
         <Heading maxWidth={['700px']} textAlign="center" scale="xl">
-          {t('Unlock the Power of VeiluxPay Affiliate Benefits')}
+          {t('Unlock the Power of HexPay Affiliate Benefits')}
         </Heading>
         <StyledContainer>
           {BenefitsList.map((benefit, index) => (

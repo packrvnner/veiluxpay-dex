@@ -26,7 +26,7 @@ export function TotalFeeToolTip() {
         <Text bold display="inline-block">
           {t('X')}
         </Text>
-        : {t('No fee when trading through VeiluxPay X (subject to change).')}
+        : {t('No fee when trading through HexPay X (subject to change).')}
       </Text>
     </>
   )

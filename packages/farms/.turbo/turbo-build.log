@@ -1,0 +1,15 @@
+
+> @pancakeswap/farms@1.4.0 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\farms
+> npx tsx scripts/build.ts
+
+npm warn Unknown env config "catalog". This will stop working in the next major version of npm.
+npm warn Unknown env config "verify-deps-before-run". This will stop working in the next major version of npm.
+npm warn Unknown env config "_jsr-registry". This will stop working in the next major version of npm.
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+save farm config...
+Starting build farm config 1
+Farm list saved to  C:\Users\olxxx\Desktop\veiluxpay-dex\packages\farms/lists/1.json
+Lp list saved to  C:\Users\olxxx\Desktop\veiluxpay-dex\packages\farms/lists/priceHelperLps/1.json
+Starting build farm config 56
+Farm list saved to  C:\Users\olxxx\Desktop\veiluxpay-dex\packages\farms/lists/56.json
+Lp list saved to  C:\Users\olxxx\Desktop\veiluxpay-dex\packages\farms/lists/priceHelperLps/56.json

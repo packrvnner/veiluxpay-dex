@@ -1,0 +1,24 @@
+
+> @pancakeswap/token-lists@0.1.0 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\token-lists
+> tsup
+
+[34mCLI[39m Building entry: {"index":"./src/index.ts","react":"./react/index.ts"}
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v6.7.0
+[34mCLI[39m Using tsup config: C:\Users\olxxx\Desktop\veiluxpay-dex\packages\token-lists\tsup.config.ts
+[34mCLI[39m Target: es6
+[34mESM[39m Build start
+[34mCJS[39m Build start
+[32mESM[39m [1mdist\chunk-UUVLERWJ.mjs [22m[32m2.18 KB[39m
+[32mESM[39m [1mdist\react.mjs          [22m[32m28.31 KB[39m
+[32mESM[39m [1mdist\index.mjs          [22m[32m1.95 KB[39m
+[32mESM[39m ⚡️ Build success in 436ms
+[32mCJS[39m [1mdist\react.js          [22m[32m29.55 KB[39m
+[32mCJS[39m [1mdist\index.js          [22m[32m2.32 KB[39m
+[32mCJS[39m [1mdist\chunk-Y2NTTLTJ.js [22m[32m2.30 KB[39m
+[32mCJS[39m ⚡️ Build success in 839ms
+[34mDTS[39m Build start
+[32mDTS[39m ⚡️ Build success in 4915ms
+[32mDTS[39m [1mdist\index.d.ts          [22m[32m1.68 KB[39m
+[32mDTS[39m [1mdist\react.d.ts          [22m[32m4.21 KB[39m
+[32mDTS[39m [1mdist\types-92a8b029.d.ts [22m[32m1.06 KB[39m

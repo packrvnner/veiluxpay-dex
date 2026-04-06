@@ -23,12 +23,12 @@ export const injectedConnector = injected({
 })
 
 export const baseAccountConnector = baseAccount({
-  appName: 'VeiluxPay',
+  appName: 'HexPay',
   appLogoUrl: 'https://pancakeswap.com/logo.png',
 })
 
 export const coinbaseConnector = coinbaseWallet({
-  appName: 'VeiluxPay',
+  appName: 'HexPay',
   appLogoUrl: 'https://pancakeswap.com/logo.png',
 })
 
@@ -111,7 +111,7 @@ export const transports = chains.reduce((ts, chain) => {
 
 export const cyberWalletConnector = isCyberWallet()
   ? createCyberWalletConnector({
-      name: 'VeiluxPay',
+      name: 'HexPay',
       appId: 'b825cd87-2db3-456d-b108-d61e74d89771',
     })
   : undefined

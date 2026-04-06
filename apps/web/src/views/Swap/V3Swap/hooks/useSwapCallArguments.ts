@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Percent } from '@pancakeswap/sdk'
 import {
-  VeiluxPayUniversalRouter,
+  HexPayUniversalRouter,
   Permit2Signature,
   getUniversalRouterAddress,
 } from '@pancakeswap/universal-router-sdk'
@@ -61,7 +61,7 @@ export function useSwapCallArguments(
       slippageTolerance: allowedSlippage,
       deadlineOrPreviousBlockhash: deadline?.toString(),
     }
-    const methodParameters = VeiluxPayUniversalRouter.swapERC20CallParameters(trade, options)
+    const methodParameters = HexPayUniversalRouter.swapERC20CallParameters(trade, options)
     const swapRouterAddress = getUniversalRouterAddress(chainId)
     if (!swapRouterAddress) return []
     let calldata = methodParameters.calldata as `0x${string}`

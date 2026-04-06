@@ -1,9 +1,9 @@
 import { ERC20Token } from '@pancakeswap/sdk';
 export declare const zksyncTokens: {
     weth: ERC20Token;
-    usdc: import("@pancakeswap/sdk").SPLToken | ERC20Token;
-    usdt: import("@pancakeswap/sdk").SPLToken | ERC20Token;
-    cake: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    usdc: ERC20Token;
+    usdt: ERC20Token;
+    cake: ERC20Token;
     usdcNative: ERC20Token;
     tes: ERC20Token;
     wbtc: ERC20Token;

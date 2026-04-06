@@ -10,7 +10,7 @@ export const ContentCountdown = (props: AdPlayerProps) => {
   const { t } = useTranslation()
   return (
     <AdCard imageUrl={getImageUrl('ad_clamm_options_trading.png')} {...props}>
-      <BodyText mb="8px">{t('VeiluxPay Meetup in Turkey starts in:')}</BodyText>
+      <BodyText mb="8px">{t('HexPay Meetup in Turkey starts in:')}</BodyText>
 
       <Countdown
         targetTime={1731997322}

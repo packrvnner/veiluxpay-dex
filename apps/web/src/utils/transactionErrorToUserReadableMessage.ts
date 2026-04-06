@@ -75,11 +75,11 @@ export function transactionErrorToUserReadableMessage(
     case 'Too much requested':
     case 'STF':
       return t(
-        'This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with VeiluxPay V3.',
+        'This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with HexPay V3.',
       )
     case 'TF':
       return t(
-        'The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with VeiluxPay V3.',
+        'The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with HexPay V3.',
       )
     case 'The requested account and/or method has not been authorized by the user.':
       return t(

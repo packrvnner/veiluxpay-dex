@@ -12,7 +12,7 @@ import {
   Toggle,
 } from '@pancakeswap/uikit'
 import { useUserSingleHopOnly } from '@pancakeswap/utils/user'
-import { VeiluxPayXTag } from 'components/VeiluxPayXTag'
+import { HexPayXTag } from 'components/PancakeSwapXTag'
 import { usePCSX, usePCSXFeatureEnabled } from 'hooks/usePCSX'
 import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import { memo, useEffect } from 'react'
@@ -68,7 +68,7 @@ export const CustomizeRoutingTab = memo(() => {
         {xFeatureEnabled ? (
           <Flex justifyContent="space-between" alignItems="flex-start" mb="24px">
             <Flex flexDirection="column">
-              <VeiluxPayXTag />
+              <HexPayXTag />
               <Text fontSize="12px" color="textSubtle" maxWidth={360} mt={10}>
                 {t(
                   'When applicable, aggregates liquidity to provide better price, more token options, and gas free swaps.',
@@ -88,7 +88,7 @@ export const CustomizeRoutingTab = memo(() => {
         <AtomBox>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>VeiluxPay Infinity</Text>
+              <Text>HexPay Infinity</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -114,7 +114,7 @@ export const CustomizeRoutingTab = memo(() => {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>VeiluxPay V3</Text>
+              <Text>HexPay V3</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -138,7 +138,7 @@ export const CustomizeRoutingTab = memo(() => {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>VeiluxPay V2</Text>
+              <Text>HexPay V2</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -163,7 +163,7 @@ export const CustomizeRoutingTab = memo(() => {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>VeiluxPay {t('StableSwap')}</Text>
+              <Text>HexPay {t('StableSwap')}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">

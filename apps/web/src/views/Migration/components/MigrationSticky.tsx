@@ -81,7 +81,7 @@ export const TEXT = {
     ],
   },
   v3: {
-    title: <Trans>VeiluxPay v3 Migration</Trans>,
+    title: <Trans>HexPay v3 Migration</Trans>,
     steps: [
       {
         title: <Trans>Unstaking from V2 Farms</Trans>,
@@ -115,7 +115,7 @@ export const TEXT = {
     ],
   },
   bCake: {
-    title: <Trans>VeiluxPay bCake Migration</Trans>,
+    title: <Trans>HexPay bCake Migration</Trans>,
     steps: [
       {
         title: <Trans>Unstaking LP tokens from the old Farms and Position Managers</Trans>,

@@ -1,9 +1,11 @@
+import { TradeType } from '@pancakeswap/swap-sdk-core';
+import { ChainId } from '@pancakeswap/chains';
 import { z, ZodObject } from 'zod';
 type GetRouterPostParamsSchemaOptions = {
     zCandidatePools: ZodObject<any>;
 };
 export declare function getRouterPostParamsSchema({ zCandidatePools }: GetRouterPostParamsSchemaOptions): z.ZodObject<{
-    tradeType: z.ZodNativeEnum<any>;
+    tradeType: z.ZodNativeEnum<typeof TradeType>;
     amount: z.ZodObject<{
         currency: z.ZodObject<{
             address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
@@ -35,7 +37,7 @@ export declare function getRouterPostParamsSchema({ zCandidatePools }: GetRouter
         value: string;
     }>;
     gasPriceWei: z.ZodOptional<z.ZodString>;
-    chainId: z.ZodNativeEnum<any>;
+    chainId: z.ZodNativeEnum<typeof ChainId>;
     currency: z.ZodObject<{
         address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
         decimals: z.ZodNumber;
@@ -57,25 +59,49 @@ export declare function getRouterPostParamsSchema({ zCandidatePools }: GetRouter
         [x: string]: any;
     }>;
 }, "strip", z.ZodTypeAny, {
-    [x: string]: any;
-    tradeType?: unknown;
-    amount?: unknown;
-    gasPriceWei?: unknown;
-    chainId?: unknown;
-    currency?: unknown;
-    maxHops?: unknown;
-    maxSplits?: unknown;
-    candidatePools?: unknown;
+    tradeType: TradeType;
+    amount: {
+        currency: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        value: string;
+    };
+    chainId: ChainId;
+    currency: {
+        symbol: string;
+        address: `0x${string}`;
+        decimals: number;
+    };
+    candidatePools: {
+        [x: string]: any;
+    };
+    gasPriceWei?: string | undefined;
+    maxHops?: number | undefined;
+    maxSplits?: number | undefined;
 }, {
-    [x: string]: any;
-    tradeType?: unknown;
-    amount?: unknown;
-    gasPriceWei?: unknown;
-    chainId?: unknown;
-    currency?: unknown;
-    maxHops?: unknown;
-    maxSplits?: unknown;
-    candidatePools?: unknown;
+    tradeType: TradeType;
+    amount: {
+        currency: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        value: string;
+    };
+    chainId: ChainId;
+    currency: {
+        symbol: string;
+        address: `0x${string}`;
+        decimals: number;
+    };
+    candidatePools: {
+        [x: string]: any;
+    };
+    gasPriceWei?: string | undefined;
+    maxHops?: number | undefined;
+    maxSplits?: number | undefined;
 }>;
 export type RouterPostParams = z.infer<ReturnType<typeof getRouterPostParamsSchema>>;
 export {};

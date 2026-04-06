@@ -479,7 +479,7 @@ export const WalletContent = ({
                     >
                       <TokensOnPCSIcon width="24px" color={showOnlyListed ? 'secondary' : 'textSubtle'} />
                       <Text fontSize="12px" color={showOnlyListed ? 'secondary' : 'textSubtle'}>
-                        {t('Tokens on VeiluxPay')}
+                        {t('Tokens on HexPay')}
                       </Text>
                     </TokensOnPCSButton>
                   </FilterRow>

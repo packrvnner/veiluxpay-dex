@@ -16,20 +16,20 @@ import webNotificationCheck from '../../../../public/images/web3-notification-ch
 const OnBoardingSteps = [
   {
     key: 'step-1',
-    title: <Trans>Authorize notifications from VeiluxPay</Trans>,
+    title: <Trans>Authorize notifications from HexPay</Trans>,
     icon: webNotificationBunny,
     description: (
       <Trans>
-        Get started with notifications from VeiluxPay. First authorize notifications by signing in your wallet
+        Get started with notifications from HexPay. First authorize notifications by signing in your wallet
       </Trans>
     ),
   },
   {
     key: 'step-2',
-    title: <Trans>Enable Notifications From VeiluxPay</Trans>,
+    title: <Trans>Enable Notifications From HexPay</Trans>,
     icon: '/images/notifications/welcome-notification-bell.png',
     description: (
-      <Trans>Subscribe to stay informed on the latest news and updates that VeiluxPay has to offer.</Trans>
+      <Trans>Subscribe to stay informed on the latest news and updates that HexPay has to offer.</Trans>
     ),
   },
   {

@@ -1,8 +1,11 @@
+import { ChainId } from '@pancakeswap/chains';
+import { TradeType } from '@pancakeswap/sdk';
 import { z } from 'zod';
 import { PoolType } from '../v3-router/types';
 export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
     address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
     type: z.ZodLiteral<PoolType.V3>;
+    fee: z.ZodNumber;
     reserve0: z.ZodOptional<z.ZodObject<{
         currency: z.ZodObject<{
             address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
@@ -89,7 +92,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     }>;
-    fee: z.ZodNumber;
     liquidity: z.ZodString;
     sqrtRatioX96: z.ZodString;
     tick: z.ZodNumber;
@@ -111,6 +113,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     address: `0x${string}`;
     type: PoolType.V3;
+    fee: number;
     token0: {
         symbol: string;
         address: `0x${string}`;
@@ -121,7 +124,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
     liquidity: string;
     sqrtRatioX96: string;
     tick: number;
@@ -151,6 +153,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, {
     address: `0x${string}`;
     type: PoolType.V3;
+    fee: number;
     token0: {
         symbol: string;
         address: `0x${string}`;
@@ -161,7 +164,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
     liquidity: string;
     sqrtRatioX96: string;
     tick: number;
@@ -324,6 +326,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     address: `0x${string}`;
     type: PoolType.STABLE;
+    fee: string;
     balances: {
         value: string;
         currency: {
@@ -332,11 +335,11 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
             decimals: number;
         };
     }[];
-    fee: string;
     amplifier: string;
 }, {
     address: `0x${string}`;
     type: PoolType.STABLE;
+    fee: string;
     balances: {
         value: string;
         currency: {
@@ -345,7 +348,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
             decimals: number;
         };
     }[];
-    fee: string;
     amplifier: string;
 }>, z.ZodObject<{
     type: z.ZodLiteral<PoolType.InfinityCL>;
@@ -462,6 +464,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     type: PoolType.InfinityCL;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -472,12 +475,12 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     liquidity: string;
     sqrtRatioX96: string;
     tick: number;
     tickSpacing: number;
-    poolManager: `0x${string}`;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -501,10 +504,10 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         liquidityNet: string;
     }[] | undefined;
     protocolFee?: number | undefined;
-    hooks?: `0x${string}` | undefined;
 }, {
     type: PoolType.InfinityCL;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -515,12 +518,12 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     liquidity: string;
     sqrtRatioX96: string;
     tick: number;
     tickSpacing: number;
-    poolManager: `0x${string}`;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -544,7 +547,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         liquidityNet: string;
     }[] | undefined;
     protocolFee?: number | undefined;
-    hooks?: `0x${string}` | undefined;
 }>, z.ZodObject<{
     type: z.ZodLiteral<PoolType.InfinityBIN>;
     currency0: z.ZodObject<{
@@ -655,6 +657,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     type: PoolType.InfinityBIN;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -665,10 +668,10 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     activeId: number;
     binStep: number;
-    poolManager: `0x${string}`;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -687,7 +690,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
     } | undefined;
     hooksRegistrationBitmap?: number | `0x${string}` | undefined;
     protocolFee?: number | undefined;
-    hooks?: `0x${string}` | undefined;
     reserveOfBin?: Record<string, {
         reserveX: string;
         reserveY: string;
@@ -695,6 +697,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, {
     type: PoolType.InfinityBIN;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -705,10 +708,10 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     activeId: number;
     binStep: number;
-    poolManager: `0x${string}`;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -727,7 +730,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
     } | undefined;
     hooksRegistrationBitmap?: number | `0x${string}` | undefined;
     protocolFee?: number | undefined;
-    hooks?: `0x${string}` | undefined;
     reserveOfBin?: Record<string, {
         reserveX: string;
         reserveY: string;
@@ -832,6 +834,7 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
 }, "strip", z.ZodTypeAny, {
     type: PoolType.InfinityStable;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -842,11 +845,11 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     amplifier: number;
     tickSpacing: number;
-    poolManager: `0x${string}`;
     stableFee: number;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -864,10 +867,10 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         };
     } | undefined;
     hooksRegistrationBitmap?: number | `0x${string}` | undefined;
-    hooks?: `0x${string}` | undefined;
 }, {
     type: PoolType.InfinityStable;
     id: `0x${string}`;
+    fee: number;
     currency0: {
         symbol: string;
         address: `0x${string}`;
@@ -878,11 +881,11 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: `0x${string}`;
         decimals: number;
     };
-    fee: number;
+    poolManager: `0x${string}`;
     amplifier: number;
     tickSpacing: number;
-    poolManager: `0x${string}`;
     stableFee: number;
+    hooks?: `0x${string}` | undefined;
     reserve0?: {
         value: string;
         currency: {
@@ -900,7 +903,6 @@ export declare const zPools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         };
     } | undefined;
     hooksRegistrationBitmap?: number | `0x${string}` | undefined;
-    hooks?: `0x${string}` | undefined;
 }>]>, "many">;
 export declare const zRouterPostParams: z.ZodObject<{
     currency: z.ZodObject<{
@@ -946,14 +948,15 @@ export declare const zRouterPostParams: z.ZodObject<{
             decimals: number;
         };
     }>;
-    chainId: z.ZodNativeEnum<any>;
-    tradeType: z.ZodNativeEnum<any>;
+    chainId: z.ZodNativeEnum<typeof ChainId>;
+    tradeType: z.ZodNativeEnum<typeof TradeType>;
     maxSplits: z.ZodOptional<z.ZodNumber>;
     gasPriceWei: z.ZodOptional<z.ZodString>;
     maxHops: z.ZodOptional<z.ZodNumber>;
     candidatePools: z.ZodArray<z.ZodUnion<[z.ZodObject<{
         address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
         type: z.ZodLiteral<PoolType.V3>;
+        fee: z.ZodNumber;
         reserve0: z.ZodOptional<z.ZodObject<{
             currency: z.ZodObject<{
                 address: z.ZodType<`0x${string}`, z.ZodTypeDef, `0x${string}`>;
@@ -1040,7 +1043,6 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         }>;
-        fee: z.ZodNumber;
         liquidity: z.ZodString;
         sqrtRatioX96: z.ZodString;
         tick: z.ZodNumber;
@@ -1062,6 +1064,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         address: `0x${string}`;
         type: PoolType.V3;
+        fee: number;
         token0: {
             symbol: string;
             address: `0x${string}`;
@@ -1072,7 +1075,6 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
         liquidity: string;
         sqrtRatioX96: string;
         tick: number;
@@ -1102,6 +1104,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, {
         address: `0x${string}`;
         type: PoolType.V3;
+        fee: number;
         token0: {
             symbol: string;
             address: `0x${string}`;
@@ -1112,7 +1115,6 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
         liquidity: string;
         sqrtRatioX96: string;
         tick: number;
@@ -1275,6 +1277,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         address: `0x${string}`;
         type: PoolType.STABLE;
+        fee: string;
         balances: {
             value: string;
             currency: {
@@ -1283,11 +1286,11 @@ export declare const zRouterPostParams: z.ZodObject<{
                 decimals: number;
             };
         }[];
-        fee: string;
         amplifier: string;
     }, {
         address: `0x${string}`;
         type: PoolType.STABLE;
+        fee: string;
         balances: {
             value: string;
             currency: {
@@ -1296,7 +1299,6 @@ export declare const zRouterPostParams: z.ZodObject<{
                 decimals: number;
             };
         }[];
-        fee: string;
         amplifier: string;
     }>, z.ZodObject<{
         type: z.ZodLiteral<PoolType.InfinityCL>;
@@ -1413,6 +1415,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         type: PoolType.InfinityCL;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1423,12 +1426,12 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         liquidity: string;
         sqrtRatioX96: string;
         tick: number;
         tickSpacing: number;
-        poolManager: `0x${string}`;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1452,10 +1455,10 @@ export declare const zRouterPostParams: z.ZodObject<{
             liquidityNet: string;
         }[] | undefined;
         protocolFee?: number | undefined;
-        hooks?: `0x${string}` | undefined;
     }, {
         type: PoolType.InfinityCL;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1466,12 +1469,12 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         liquidity: string;
         sqrtRatioX96: string;
         tick: number;
         tickSpacing: number;
-        poolManager: `0x${string}`;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1495,7 +1498,6 @@ export declare const zRouterPostParams: z.ZodObject<{
             liquidityNet: string;
         }[] | undefined;
         protocolFee?: number | undefined;
-        hooks?: `0x${string}` | undefined;
     }>, z.ZodObject<{
         type: z.ZodLiteral<PoolType.InfinityBIN>;
         currency0: z.ZodObject<{
@@ -1606,6 +1608,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         type: PoolType.InfinityBIN;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1616,10 +1619,10 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         activeId: number;
         binStep: number;
-        poolManager: `0x${string}`;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1638,7 +1641,6 @@ export declare const zRouterPostParams: z.ZodObject<{
         } | undefined;
         hooksRegistrationBitmap?: number | `0x${string}` | undefined;
         protocolFee?: number | undefined;
-        hooks?: `0x${string}` | undefined;
         reserveOfBin?: Record<string, {
             reserveX: string;
             reserveY: string;
@@ -1646,6 +1648,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, {
         type: PoolType.InfinityBIN;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1656,10 +1659,10 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         activeId: number;
         binStep: number;
-        poolManager: `0x${string}`;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1678,7 +1681,6 @@ export declare const zRouterPostParams: z.ZodObject<{
         } | undefined;
         hooksRegistrationBitmap?: number | `0x${string}` | undefined;
         protocolFee?: number | undefined;
-        hooks?: `0x${string}` | undefined;
         reserveOfBin?: Record<string, {
             reserveX: string;
             reserveY: string;
@@ -1783,6 +1785,7 @@ export declare const zRouterPostParams: z.ZodObject<{
     }, "strip", z.ZodTypeAny, {
         type: PoolType.InfinityStable;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1793,11 +1796,11 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         amplifier: number;
         tickSpacing: number;
-        poolManager: `0x${string}`;
         stableFee: number;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1815,10 +1818,10 @@ export declare const zRouterPostParams: z.ZodObject<{
             };
         } | undefined;
         hooksRegistrationBitmap?: number | `0x${string}` | undefined;
-        hooks?: `0x${string}` | undefined;
     }, {
         type: PoolType.InfinityStable;
         id: `0x${string}`;
+        fee: number;
         currency0: {
             symbol: string;
             address: `0x${string}`;
@@ -1829,11 +1832,11 @@ export declare const zRouterPostParams: z.ZodObject<{
             address: `0x${string}`;
             decimals: number;
         };
-        fee: number;
+        poolManager: `0x${string}`;
         amplifier: number;
         tickSpacing: number;
-        poolManager: `0x${string}`;
         stableFee: number;
+        hooks?: `0x${string}` | undefined;
         reserve0?: {
             value: string;
             currency: {
@@ -1851,28 +1854,427 @@ export declare const zRouterPostParams: z.ZodObject<{
             };
         } | undefined;
         hooksRegistrationBitmap?: number | `0x${string}` | undefined;
-        hooks?: `0x${string}` | undefined;
     }>]>, "many">;
 }, "strip", z.ZodTypeAny, {
-    [x: string]: any;
-    currency?: unknown;
-    amount?: unknown;
-    chainId?: unknown;
-    tradeType?: unknown;
-    maxSplits?: unknown;
-    gasPriceWei?: unknown;
-    maxHops?: unknown;
-    candidatePools?: unknown;
+    currency: {
+        symbol: string;
+        address: `0x${string}`;
+        decimals: number;
+    };
+    amount: {
+        value: string;
+        currency: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+    };
+    chainId: ChainId;
+    tradeType: TradeType;
+    candidatePools: ({
+        type: PoolType.V2;
+        reserve0: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        };
+        reserve1: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        };
+    } | {
+        address: `0x${string}`;
+        type: PoolType.V3;
+        fee: number;
+        token0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        token1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        liquidity: string;
+        sqrtRatioX96: string;
+        tick: number;
+        token0ProtocolFee: string;
+        token1ProtocolFee: string;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        ticks?: {
+            index: number;
+            liquidityGross: string;
+            liquidityNet: string;
+        }[] | undefined;
+    } | {
+        address: `0x${string}`;
+        type: PoolType.STABLE;
+        fee: string;
+        balances: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        }[];
+        amplifier: string;
+    } | {
+        type: PoolType.InfinityCL;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        liquidity: string;
+        sqrtRatioX96: string;
+        tick: number;
+        tickSpacing: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+        ticks?: {
+            index: number;
+            liquidityGross: string;
+            liquidityNet: string;
+        }[] | undefined;
+        protocolFee?: number | undefined;
+    } | {
+        type: PoolType.InfinityBIN;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        activeId: number;
+        binStep: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+        protocolFee?: number | undefined;
+        reserveOfBin?: Record<string, {
+            reserveX: string;
+            reserveY: string;
+        }> | undefined;
+    } | {
+        type: PoolType.InfinityStable;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        amplifier: number;
+        tickSpacing: number;
+        stableFee: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+    })[];
+    maxSplits?: number | undefined;
+    gasPriceWei?: string | undefined;
+    maxHops?: number | undefined;
 }, {
-    [x: string]: any;
-    currency?: unknown;
-    amount?: unknown;
-    chainId?: unknown;
-    tradeType?: unknown;
-    maxSplits?: unknown;
-    gasPriceWei?: unknown;
-    maxHops?: unknown;
-    candidatePools?: unknown;
+    currency: {
+        symbol: string;
+        address: `0x${string}`;
+        decimals: number;
+    };
+    amount: {
+        value: string;
+        currency: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+    };
+    chainId: ChainId;
+    tradeType: TradeType;
+    candidatePools: ({
+        type: PoolType.V2;
+        reserve0: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        };
+        reserve1: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        };
+    } | {
+        address: `0x${string}`;
+        type: PoolType.V3;
+        fee: number;
+        token0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        token1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        liquidity: string;
+        sqrtRatioX96: string;
+        tick: number;
+        token0ProtocolFee: string;
+        token1ProtocolFee: string;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        ticks?: {
+            index: number;
+            liquidityGross: string;
+            liquidityNet: string;
+        }[] | undefined;
+    } | {
+        address: `0x${string}`;
+        type: PoolType.STABLE;
+        fee: string;
+        balances: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        }[];
+        amplifier: string;
+    } | {
+        type: PoolType.InfinityCL;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        liquidity: string;
+        sqrtRatioX96: string;
+        tick: number;
+        tickSpacing: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+        ticks?: {
+            index: number;
+            liquidityGross: string;
+            liquidityNet: string;
+        }[] | undefined;
+        protocolFee?: number | undefined;
+    } | {
+        type: PoolType.InfinityBIN;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        activeId: number;
+        binStep: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+        protocolFee?: number | undefined;
+        reserveOfBin?: Record<string, {
+            reserveX: string;
+            reserveY: string;
+        }> | undefined;
+    } | {
+        type: PoolType.InfinityStable;
+        id: `0x${string}`;
+        fee: number;
+        currency0: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        currency1: {
+            symbol: string;
+            address: `0x${string}`;
+            decimals: number;
+        };
+        poolManager: `0x${string}`;
+        amplifier: number;
+        tickSpacing: number;
+        stableFee: number;
+        hooks?: `0x${string}` | undefined;
+        reserve0?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        reserve1?: {
+            value: string;
+            currency: {
+                symbol: string;
+                address: `0x${string}`;
+                decimals: number;
+            };
+        } | undefined;
+        hooksRegistrationBitmap?: number | `0x${string}` | undefined;
+    })[];
+    maxSplits?: number | undefined;
+    gasPriceWei?: string | undefined;
+    maxHops?: number | undefined;
 }>;
 export type RouterPostParams = z.infer<typeof zRouterPostParams>;
 export type SerializedPools = z.infer<typeof zPools>;

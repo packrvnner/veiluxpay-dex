@@ -349,7 +349,7 @@ export declare function buildInfinityMixedQuoteCall<P extends SupportedPool = Su
         }];
     }];
     functionName: "quoteMixedExactInput";
-    args: [`0x${string}`[], `0x${string}`, `0x${string}`[], any];
+    args: [`0x${string}`[], `0x${string}`, `0x${string}`[], bigint];
 };
 export declare function buildInfinityCLQuoteCall<P extends InfinityCLPool = InfinityCLPool>(route: QuoteRoute<P>): {
     readonly address: any;
@@ -882,9 +882,9 @@ export declare function buildInfinityCLQuoteCall<P extends InfinityCLPool = Infi
     }];
     readonly functionName: "quoteExactInput" | "quoteExactOutput";
     readonly args: readonly [{
-        readonly exactCurrency: any;
+        readonly exactCurrency: `0x${string}`;
         readonly path: import("./utils/encodeInfinityRouteToPath").PathKey[];
-        readonly exactAmount: `0x${any}`;
+        readonly exactAmount: `0x${string}`;
     }];
 };
 export declare function buildInfinityBinQuoteCall<P extends InfinityBinPool = InfinityBinPool>(route: QuoteRoute<P>): {
@@ -1418,9 +1418,9 @@ export declare function buildInfinityBinQuoteCall<P extends InfinityBinPool = In
     }];
     readonly functionName: "quoteExactInput" | "quoteExactOutput";
     readonly args: readonly [{
-        readonly exactCurrency: any;
+        readonly exactCurrency: `0x${string}`;
         readonly path: import("./utils/encodeInfinityRouteToPath").PathKey[];
-        readonly exactAmount: `0x${any}`;
+        readonly exactAmount: `0x${string}`;
     }];
 };
 //# sourceMappingURL=fetchInfinityQuote.d.ts.map

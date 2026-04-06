@@ -254,7 +254,7 @@ export declare function getStableSwapFeeCall(pair: StableSwapPair, inputAmount: 
     }];
     readonly address: `0x${string}`;
     readonly functionName: "get_exchange_fee";
-    readonly args: readonly [`0x${string}`, 1n, 0n, any] | readonly [`0x${string}`, 0n, 1n, any];
+    readonly args: readonly [`0x${string}`, 1n, 0n, bigint] | readonly [`0x${string}`, 0n, 1n, bigint];
 };
 interface Options {
     provider: Provider;

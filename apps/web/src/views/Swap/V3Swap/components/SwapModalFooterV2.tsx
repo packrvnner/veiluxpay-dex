@@ -26,7 +26,7 @@ import { warningSeverity } from 'utils/exchange'
 import { SVMTradingFee } from 'views/SwapSimplify/InfinitySwap/TradingFee'
 import { SolanaBridgeTradingFee } from 'views/SwapSimplify/InfinitySwap/SolanaBridgeTradingFee'
 
-import { VeiluxPayXTag } from 'components/VeiluxPayXTag'
+import { HexPayXTag } from 'components/PancakeSwapXTag'
 import { paymasterInfo } from 'config/paymaster'
 import { usePaymaster } from 'hooks/usePaymaster'
 import { isAddressEqual } from 'utils'
@@ -284,7 +284,7 @@ export const SwapModalFooterV2 = memo(function SwapModalFooterV2({
             <RowFixed>
               <Text fontSize="14px">{t('Route')}</Text>
             </RowFixed>
-            <VeiluxPayXTag fontSize="14px" />
+            <HexPayXTag fontSize="14px" />
           </RowBetween>
         )}
         {isPaymasterAvailable && isPaymasterTokenActive && (

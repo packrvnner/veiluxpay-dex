@@ -9,28 +9,28 @@ const InlineLink = styled(Link)`
 
 const faqConfig: FaqConfig[] = [
   {
-    title: <Trans>What are Veilux Vaults?</Trans>,
+    title: <Trans>What are Hex Vaults?</Trans>,
     description: [
       <Trans
         i18nKey="syrup-pools-desc"
-        i18nTemplate="Veilux Vaults let you stake VLX to earn rewards. By depositing VLX into a Syrup Pool, you can receive tokens from partner projects, depending on the pool."
+        i18nTemplate="Hex Vaults let you stake VLX to earn rewards. By depositing VLX into a Syrup Pool, you can receive tokens from partner projects, depending on the pool."
       />,
     ],
   },
   {
-    title: <Trans>How do I stake VLX in Veilux Vaults?</Trans>,
+    title: <Trans>How do I stake VLX in Hex Vaults?</Trans>,
     description: [
       <>
         <Trans
           i18nKey="syrup-pools-instructions"
-          i18nTemplate="Go to the <0>Veilux Vaults</0> section on VeiluxPay, choose a pool, and deposit VLX. Your rewards will start accumulating automatically. You can unstake your VLX anytime."
+          i18nTemplate="Go to the <0>Hex Vaults</0> section on HexPay, choose a pool, and deposit VLX. Your rewards will start accumulating automatically. You can unstake your VLX anytime."
           components={[<strong key="0" />]}
         />
       </>,
     ],
   },
   {
-    title: <Trans>What rewards can I earn from Veilux Vaults?</Trans>,
+    title: <Trans>What rewards can I earn from Hex Vaults?</Trans>,
     description: [
       <ul key="rewards-list">
         <Trans
@@ -47,7 +47,7 @@ const faqConfig: FaqConfig[] = [
       <>
         <Trans
           i18nKey="fees-description"
-          i18nTemplate="There are <0>no platform fees</0> for staking or unstaking in Veilux Vaults. However, <1>standard blockchain gas fees</1> will still apply when making transactions, such as depositing, harvesting rewards, or unstaking VLX."
+          i18nTemplate="There are <0>no platform fees</0> for staking or unstaking in Hex Vaults. However, <1>standard blockchain gas fees</1> will still apply when making transactions, such as depositing, harvesting rewards, or unstaking VLX."
           components={[<strong key="0" />, <strong key="1" />]}
         />
       </>,

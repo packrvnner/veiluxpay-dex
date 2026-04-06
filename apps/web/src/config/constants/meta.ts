@@ -4,7 +4,7 @@ import { ASSET_CDN } from './endpoints'
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'VeiluxPay',
+  title: 'HexPay',
   description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
   image: `${ASSET_CDN}/web/og/hero.jpg`,
 }
@@ -47,33 +47,33 @@ const getPathList = memoize((t: ContextApi['t']): PathList => {
       '/info': {
         basePath: true,
         title: `${t('Overview')} - ${t('Info.section_title')}`,
-        description: 'View statistics for VeiluxPay exchanges.',
+        description: 'View statistics for HexPay exchanges.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/info/pairs': {
         title: `${t('Pairs')} - ${t('Info.section_title')}`,
-        description: 'View statistics for VeiluxPay exchanges.',
+        description: 'View statistics for HexPay exchanges.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/info/tokens': {
         title: `${t('Tokens')} - ${t('Info.section_title')}`,
-        description: 'View statistics for VeiluxPay exchanges.',
+        description: 'View statistics for HexPay exchanges.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/info/v3/pairs': {
         title: `${t('Pairs')} - ${t('Info.section_title')}`,
-        description: 'View statistics for VeiluxPay exchanges.',
+        description: 'View statistics for HexPay exchanges.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/info/v3/tokens': {
         title: `${t('Tokens')} - ${t('Info.section_title')}`,
-        description: 'View statistics for VeiluxPay exchanges.',
+        description: 'View statistics for HexPay exchanges.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/liquidity/pool': {
         basePath: true,
         title: `${t('Pool Detail')}`,
-        description: 'View statistics for VeiluxPay pool.',
+        description: 'View statistics for HexPay pool.',
         image: `${ASSET_CDN}/web/og/info.jpg`,
       },
       '/nfts': { title: t('NFT Marketplace'), image: `${ASSET_CDN}/web/og/nft.jpg` },
@@ -89,7 +89,7 @@ const getPathList = memoize((t: ContextApi['t']): PathList => {
         image: `${ASSET_CDN}/web/og/burn-dashboard.png`,
       },
     },
-    defaultTitleSuffix: t('VeiluxPay'),
+    defaultTitleSuffix: t('HexPay'),
   }
 })
 

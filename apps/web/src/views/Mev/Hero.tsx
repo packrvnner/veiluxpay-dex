@@ -300,12 +300,12 @@ export const useMevConfig = (walletType: WalletType) => {
     () => ({
       [WalletType.mevDefaultOnBSC]: {
         title: t('You are Protected!'),
-        desc: t('MEV Guard is now active, your trades are secure with VeiluxPay'),
+        desc: t('MEV Guard is now active, your trades are secure with HexPay'),
         btnText: t('Added to wallet'),
       },
       [WalletType.mevOnlyManualConfig]: {
         title: t('Setup Required!'),
-        desc: t('Your wallet requires manual setup to enable VeiluxPay MEV Guard'),
+        desc: t('Your wallet requires manual setup to enable HexPay MEV Guard'),
         btnText: t('See the guides'),
         onClick: () => {
           const element = document.getElementById(INFO_SECTION_ID)
@@ -316,12 +316,12 @@ export const useMevConfig = (walletType: WalletType) => {
       },
       [WalletType.nativeSupportCustomRPC]: {
         title: t('In one click'),
-        desc: t('Add automatically on BNB Smart Chain: VeiluxPay MEV Guard '),
+        desc: t('Add automatically on BNB Smart Chain: HexPay MEV Guard '),
         btnText: t('Add to wallet'),
       },
       [WalletType.mevNotSupported]: {
         title: t('Can’t Enable MEV Guard!'),
-        desc: t('Your wallet provider doesn’t support VeiluxPay MEV Guard'),
+        desc: t('Your wallet provider doesn’t support HexPay MEV Guard'),
         btnText: t('See the wallets supported'),
       },
     }),
@@ -354,7 +354,7 @@ export const Hero: React.FC<{ txCount: number }> = ({ txCount }) => {
                 color="secondary"
                 bold
               >
-                {t('VeiluxPay MEV GUARD')}
+                {t('HexPay MEV GUARD')}
               </Text>
               <Text fontSize={isMobile ? '24px' : '32px'} lineHeight={isMobile ? '36px' : '38px'} bold>
                 {t('Safeguard your swap against frontrunning and sandwich attacks!')}
@@ -405,9 +405,9 @@ export const Hero: React.FC<{ txCount: number }> = ({ txCount }) => {
                           </Text>
                           <Text>
                             {isMEVEnabled
-                              ? t('Added automatically on BNB Smart Chain: VeiluxPay MEV Guard')
+                              ? t('Added automatically on BNB Smart Chain: HexPay MEV Guard')
                               : !account
-                              ? t('Add automatically on BNB Smart Chain: VeiluxPay MEV Guard')
+                              ? t('Add automatically on BNB Smart Chain: HexPay MEV Guard')
                               : mevConfig.desc}
                           </Text>
                         </Box>
@@ -431,9 +431,9 @@ export const Hero: React.FC<{ txCount: number }> = ({ txCount }) => {
                           </Text>
                           <Text>
                             {isMEVEnabled
-                              ? t('Added automatically on BNB Smart Chain: VeiluxPay MEV Guard')
+                              ? t('Added automatically on BNB Smart Chain: HexPay MEV Guard')
                               : !account
-                              ? t('Add automatically on BNB Smart Chain: VeiluxPay MEV Guard')
+                              ? t('Add automatically on BNB Smart Chain: HexPay MEV Guard')
                               : mevConfig.desc}
                           </Text>
                         </Box>

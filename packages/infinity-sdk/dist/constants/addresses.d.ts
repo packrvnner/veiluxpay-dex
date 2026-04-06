@@ -1,6 +1,6 @@
 import { ChainId } from '@pancakeswap/chains';
 import { Address } from 'viem';
-export declare const INFINITY_SUPPORTED_CHAINS: readonly [any, any, any, any];
+export declare const INFINITY_SUPPORTED_CHAINS: readonly [ChainId.BSC, ChainId.BSC_TESTNET, ChainId.SEPOLIA, ChainId.BASE];
 export type InfinitySupportedChains = (typeof INFINITY_SUPPORTED_CHAINS)[number];
 export declare const INFI_VAULT_ADDRESSES: Record<InfinitySupportedChains, Address>;
 export declare const INFI_CL_POOL_MANAGER_ADDRESSES: Record<InfinitySupportedChains, Address>;

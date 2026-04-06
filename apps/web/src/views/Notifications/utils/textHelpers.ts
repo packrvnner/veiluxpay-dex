@@ -13,7 +13,7 @@ export const getOnBoardingButtonText = (
 
   if (isStep1) return t('Enable Notifications')
   if (isStep2) return t('Sign In With Wallet')
-  if (isStep3) return t('Subscribe To VeiluxPay')
+  if (isStep3) return t('Subscribe To HexPay')
 
   return t('Enable Notifications')
 }

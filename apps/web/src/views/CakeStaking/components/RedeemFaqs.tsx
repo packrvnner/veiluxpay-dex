@@ -53,7 +53,7 @@ const faqs = [
           </li>
           <li>
             <Trans>
-              VeiluxPay cannot process redemptions for externally managed veCake — please check directly with those
+              HexPay cannot process redemptions for externally managed veCake — please check directly with those
               platforms.
             </Trans>
           </li>
@@ -97,7 +97,7 @@ const faqs = [
         <ul>
           <li>
             <Trans>
-              Yield farming boosts (from veCake) will be phased out across position managers, Veilux Vaults, and farming
+              Yield farming boosts (from veCake) will be phased out across position managers, Hex Vaults, and farming
               activities between April 24 and May 7, 2025.
             </Trans>
           </li>
@@ -110,7 +110,7 @@ const faqs = [
           </li>
           <li>
             <Trans>
-              The VeiluxPay UI will gradually reflect the retirement of affected products from these changes.
+              The HexPay UI will gradually reflect the retirement of affected products from these changes.
             </Trans>
           </li>
         </ul>

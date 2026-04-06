@@ -80,7 +80,7 @@ export const EthWbethFaq = () => [
           </StyledLink>
         </NextLink>
         <Trans>
-          VeiluxPay is also working to support a conversion contract on our liquid staking page to convert wBETH back
+          HexPay is also working to support a conversion contract on our liquid staking page to convert wBETH back
           to ETH seamlessly.
         </Trans>
       </>

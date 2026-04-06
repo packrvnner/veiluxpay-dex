@@ -1,0 +1,16 @@
+
+> @pancakeswap/chains@0.8.0 build C:\Users\olxxx\Desktop\veiluxpay-dex\packages\chains
+> tsup
+
+[34mCLI[39m Building entry: {"index":"./src/index.ts"}
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v6.7.0
+[34mCLI[39m Using tsup config: C:\Users\olxxx\Desktop\veiluxpay-dex\packages\chains\tsup.config.ts
+[34mCLI[39m Target: es2020
+[34mCLI[39m Cleaning output folder
+[34mESM[39m Build start
+[34mCJS[39m Build start
+[32mCJS[39m [1mdist\index.js [22m[32m19.40 KB[39m
+[32mCJS[39m ⚡️ Build success in 216ms
+[32mESM[39m [1mdist\index.mjs [22m[32m18.56 KB[39m
+[32mESM[39m ⚡️ Build success in 248ms

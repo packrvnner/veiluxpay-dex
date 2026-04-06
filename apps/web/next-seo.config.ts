@@ -1,16 +1,16 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: '%s | VeiluxPay',
-  defaultTitle: 'VeiluxPay',
+  titleTemplate: '%s | HexPay',
+  defaultTitle: 'HexPay',
   description: 'Trade, stake, and earn on the multi-chain decentralized exchange',
   twitter: {
     cardType: 'summary_large_image',
-    handle: '@VeiluxPay',
-    site: '@VeiluxPay',
+    handle: '@HexPay',
+    site: '@HexPay',
   },
   openGraph: {
-    title: 'VeiluxPay — Multi-Chain DEX',
+    title: 'HexPay — Multi-Chain DEX',
     description: 'Trade, stake, and earn on the multi-chain decentralized exchange',
     images: [],
   },

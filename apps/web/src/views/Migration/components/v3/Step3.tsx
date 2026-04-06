@@ -164,11 +164,11 @@ export function Step3() {
   return (
     <AtomBox textAlign="center">
       <Heading scale="lg" pb="16px">
-        {t('Quick Start')} - {t('VeiluxPay V3')}
+        {t('Quick Start')} - {t('HexPay V3')}
       </Heading>
       <Text pb="48px">
         {t(
-          'In VeiluxPay Exchange V3, liquidity providers are able to customize the trading fee tier and concentrate their liquidity to a specific price range to maximize their capital efficiency.',
+          'In HexPay Exchange V3, liquidity providers are able to customize the trading fee tier and concentrate their liquidity to a specific price range to maximize their capital efficiency.',
         )}
       </Text>
 

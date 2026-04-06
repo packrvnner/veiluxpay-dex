@@ -111,7 +111,7 @@ export const SolanaWalletModal: React.FC = () => {
 
   return (
     <ModalV2 isOpen={isOpen} onDismiss={onClose}>
-      <Modal title={t('Connect your wallet to VeiluxPay')} onDismiss={onClose} onAnimationEnd={handleCloseComplete}>
+      <Modal title={t('Connect your wallet to HexPay')} onDismiss={onClose} onAnimationEnd={handleCloseComplete}>
         {isWalletNotInstalled ? (
           <ModalBody>
             <ColumnBox>

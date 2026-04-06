@@ -1,14 +1,14 @@
 import { ERC20Token } from '@pancakeswap/sdk';
 export declare const ethereumTokens: {
     weth: ERC20Token;
-    usdt: import("@pancakeswap/sdk").SPLToken | ERC20Token;
-    usdc: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    usdt: ERC20Token;
+    usdc: ERC20Token;
     wbtc: ERC20Token;
     sdao: ERC20Token;
     stg: ERC20Token;
     fuse: ERC20Token;
     caps: ERC20Token;
-    cake: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    cake: ERC20Token;
     dai: ERC20Token;
     ldo: ERC20Token;
     wstETH: ERC20Token;

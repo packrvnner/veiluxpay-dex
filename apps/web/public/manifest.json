@@ -1,8 +1,8 @@
 {
-  "short_name": "VeiluxPay",
-  "name": "VeiluxPay",
+  "short_name": "HexPay",
+  "name": "HexPay",
   "description": "Trade, stake, and earn on the multi-chain DEX",
-  "homepage_url": "https://veiluxpay.com",
+  "homepage_url": "https://hexpay.org",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#7C3AED",

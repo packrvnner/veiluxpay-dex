@@ -19,7 +19,7 @@ export const AdSolana = (props: Omit<AdPlayerProps, 'config'>) => {
     <AdCard imageUrl={imgURL} {...props}>
       <BodyText mb="0">
         <Text as="span" color="text" bold fontSize="14px">
-          {t('Swap Solana Tokens on VeiluxPay.')}
+          {t('Swap Solana Tokens on HexPay.')}
         </Text>
       </BodyText>
 

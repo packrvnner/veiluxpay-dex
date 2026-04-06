@@ -23,7 +23,7 @@ const QRShareImageButton: React.FC<QRShareImageButtonProps> = ({ elementId, code
       if (navigator.share) {
         navigator
           .share({
-            title: t('Gift from VeiluxPay!'),
+            title: t('Gift from HexPay!'),
             text: shareText,
             url: claimLink,
           })
@@ -41,7 +41,7 @@ const QRShareImageButton: React.FC<QRShareImageButtonProps> = ({ elementId, code
 
     if (blob) {
       const shareData = {
-        title: t('Gift from VeiluxPay!'),
+        title: t('Gift from HexPay!'),
         text: t('Scan the QR code to claim your gift! Code: %code%', { code }),
         files: [new File([blob], `${OPTIONS.filename}.png`, { type: 'image/png' })],
       }

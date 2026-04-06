@@ -17,7 +17,7 @@ export const TaikoEthTooltips = () => {
         <InlineLink m="0 4px 0 0" external display="inline" href="https://bridge.taiko.xyz/">
           {t('Taiko')}
         </InlineLink>
-        {t('ahead of any potential VeiluxPay Affiliate deployment')}
+        {t('ahead of any potential HexPay Affiliate deployment')}
       </Text>
     </Box>,
     {

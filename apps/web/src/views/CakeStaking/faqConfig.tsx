@@ -60,7 +60,7 @@ const faqConfig: { title: ReactNode; description: ReactNode[] }[] = [
         </li>
         <li>
           <strong>Governance participation</strong>:{' '}
-          <Trans>Help shape VeiluxPay&apos;s future through governance votes.</Trans>
+          <Trans>Help shape HexPay&apos;s future through governance votes.</Trans>
         </li>
         <li>
           <strong>IFO participation</strong>:{' '}

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent } from '@pancakeswap/swap-sdk-core';
+import { Currency, CurrencyAmount, Percent, Fraction } from '@pancakeswap/swap-sdk-core';
 import { Tick } from '../entities';
 export declare const FeeCalculator: {
     getEstimatedLPFee: typeof getEstimatedLPFee;
@@ -24,14 +24,14 @@ interface EstimateFeeOptions {
     insidePercentage?: Percent;
     protocolFee?: Percent;
 }
-export declare function getEstimatedLPFeeWithProtocolFee({ amount, currency, ...rest }: EstimateFeeOptions): any;
-export declare function getEstimatedLPFee({ amount, currency, ...rest }: EstimateFeeOptions): any;
+export declare function getEstimatedLPFeeWithProtocolFee({ amount, currency, ...rest }: EstimateFeeOptions): Fraction;
+export declare function getEstimatedLPFee({ amount, currency, ...rest }: EstimateFeeOptions): Fraction;
 interface EstimateFeeByAmountsOptions extends Omit<EstimateFeeOptions, 'amount' | 'currency'> {
     amountA: CurrencyAmount<Currency>;
     amountB: CurrencyAmount<Currency>;
 }
-export declare function getEstimatedLPFeeByAmountsWithProtocolFee(options: EstimateFeeByAmountsOptions): any;
-export declare function getEstimatedLPFeeByAmounts({ protocolFee, ...rest }: EstimateFeeByAmountsOptions): any;
+export declare function getEstimatedLPFeeByAmountsWithProtocolFee(options: EstimateFeeByAmountsOptions): Fraction;
+export declare function getEstimatedLPFeeByAmounts({ protocolFee, ...rest }: EstimateFeeByAmountsOptions): Fraction;
 interface GetAmountOptions {
     amount: CurrencyAmount<Currency>;
     currency: Currency;
@@ -39,7 +39,7 @@ interface GetAmountOptions {
     tickUpper: number;
     sqrtRatioX96: bigint;
 }
-export declare function getDependentAmount(options: GetAmountOptions): any;
+export declare function getDependentAmount(options: GetAmountOptions): CurrencyAmount<Currency> | undefined;
 export declare function getLiquidityBySingleAmount({ amount, currency, ...rest }: GetAmountOptions): bigint | undefined;
 interface GetLiquidityOptions extends Omit<GetAmountOptions, 'amount' | 'currency'> {
     amountA: CurrencyAmount<Currency>;
@@ -51,13 +51,13 @@ interface GetAmountsOptions extends Omit<GetAmountOptions, 'amount' | 'currency'
     currencyB: Currency;
     liquidity: bigint;
 }
-export declare function getAmountsByLiquidityAndPrice(options: GetAmountsOptions): any[];
+export declare function getAmountsByLiquidityAndPrice(options: GetAmountsOptions): CurrencyAmount<Currency>[];
 interface GetAmountsAtNewPriceOptions extends Omit<GetAmountOptions, 'amount' | 'currency'> {
     amountA: CurrencyAmount<Currency>;
     amountB: CurrencyAmount<Currency>;
     newSqrtRatioX96: bigint;
 }
-export declare function getAmountsAtNewPrice({ newSqrtRatioX96, ...rest }: GetAmountsAtNewPriceOptions): any[] | undefined;
+export declare function getAmountsAtNewPrice({ newSqrtRatioX96, ...rest }: GetAmountsAtNewPriceOptions): CurrencyAmount<Currency>[] | undefined;
 export declare function getAverageLiquidity(ticks: Tick[], tickSpacing: number, tickLower: number, tickUpper: number): bigint;
 export declare function getLiquidityFromSqrtRatioX96(ticks: Tick[], sqrtRatioX96: bigint): bigint;
 export declare function getLiquidityFromTick(ticks: Tick[], tick: number): bigint;

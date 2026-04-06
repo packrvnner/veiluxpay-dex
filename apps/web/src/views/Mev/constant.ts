@@ -39,7 +39,7 @@ export const walletPretendToMetamask = [
 // wallet support mev on bsc default, but it not using PCS RPC
 
 export const rpcData = {
-  'Network Name': 'VeiluxPay MEV Guard',
+  'Network Name': 'HexPay MEV Guard',
   'RPC URL': 'https://bscrpc.pancakeswap.finance',
   'Chain ID': '56',
   'Currency symbol': 'BNB',

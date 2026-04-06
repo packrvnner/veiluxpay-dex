@@ -1,9 +1,9 @@
 import { ERC20Token } from '@pancakeswap/sdk';
 export declare const baseTokens: {
     weth: ERC20Token;
-    usdt: import("@pancakeswap/sdk").SPLToken | ERC20Token;
-    usdc: import("@pancakeswap/sdk").SPLToken | ERC20Token;
-    cake: import("@pancakeswap/sdk").SPLToken | ERC20Token;
+    usdt: ERC20Token;
+    usdc: ERC20Token;
+    cake: ERC20Token;
     cbETH: ERC20Token;
     usdbc: ERC20Token;
     dai: ERC20Token;

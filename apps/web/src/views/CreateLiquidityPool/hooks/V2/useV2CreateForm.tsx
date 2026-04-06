@@ -444,7 +444,7 @@ export const useV2CreateForm = () => {
             <Flex flexDirection="column">
               <MessageText>
                 {t(
-                  'Adding liquidity to this V2 pair is currently not available on VeiluxPay UI. Please follow the instructions to resolve it using blockchain explorer.',
+                  'Adding liquidity to this V2 pair is currently not available on HexPay UI. Please follow the instructions to resolve it using blockchain explorer.',
                 )}
               </MessageText>
               <LinkExternal

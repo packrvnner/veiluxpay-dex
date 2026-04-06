@@ -159,7 +159,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
         <StyledPageHeader>
           <Flex alignItems="baseline" width="100%" justifyContent="space-between" mt="16px" mb="16px">
             <Text lineHeight="110%" bold color="secondary" fontSize="32px">
-              {t('Veilux Vaults')}
+              {t('Hex Vaults')}
             </Text>
             {isMobile ? (
               <PinnedFAQButton
@@ -175,7 +175,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
           <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
             <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
               <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-                {t('Veilux Vaults')}
+                {t('Hex Vaults')}
               </Heading>
               <Heading scale="md" color="text">
                 {t('Just stake some tokens to earn.')}

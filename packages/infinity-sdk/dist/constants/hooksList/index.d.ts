@@ -1,12 +1,21 @@
 import { ChainId } from '@pancakeswap/chains';
 export declare const hooksList: {
-    [x: number]: import("../..").HookData[];
+    56: import("../..").HookData[];
+    97: import("../..").HookData[];
+    8453: import("../..").HookData[];
+    11155111: never[];
 };
 export declare const dynamicHooksList: {
-    [x: number]: never[] | Record<"CL" | "Bin", import("../..").HookData | undefined>;
+    56: Record<"CL" | "Bin", import("../..").HookData | undefined>;
+    97: Record<"CL" | "Bin", import("../..").HookData>;
+    8453: Record<"CL" | "Bin", import("../..").HookData | undefined>;
+    11155111: never[];
 };
 export declare const whitelistLabeledHooksList: {
-    [x: number]: `0x${string}`[];
+    56: `0x${string}`[];
+    97: never[];
+    8453: never[];
+    11155111: never[];
 };
 export declare function findHook(hook: string, chainId: ChainId): import("../..").HookData | undefined;
 export * from './dynamicFeeHook';

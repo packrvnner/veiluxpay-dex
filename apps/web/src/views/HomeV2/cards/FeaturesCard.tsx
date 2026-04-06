@@ -16,7 +16,7 @@ export const FeaturesCard = () => {
   if (isMobile) {
     return (
       <RowLayout style={{ marginTop: '20px' }} sidePadding="16px">
-        <CardSection title={t('Featured on VeiluxPay')}>
+        <CardSection title={t('Featured on HexPay')}>
           <PerpetualCard tokens={tokens.filter((x) => x.symbol === 'BTC' || x.symbol === 'ETH')} />
           <PredictionCard token={tokens.find((x) => x.symbol === 'BNB')!} winner={topWinner} />
         </CardSection>
@@ -28,7 +28,7 @@ export const FeaturesCard = () => {
       <>
         <RowLayout sidePadding="24px" className="homepage-snap">
           <FeaturedText isMobile={isMobile} isTablet={isTablet}>
-            {t('Featured on VeiluxPay')}
+            {t('Featured on HexPay')}
           </FeaturedText>
         </RowLayout>
         <RowLayout
@@ -47,7 +47,7 @@ export const FeaturesCard = () => {
     <>
       <RowLayout sidePadding="24px" className="homepage-snap">
         <FeaturedText isMobile={isMobile} isTablet={isTablet}>
-          {t('Featured on VeiluxPay')}
+          {t('Featured on HexPay')}
         </FeaturedText>
       </RowLayout>
       <RowLayout

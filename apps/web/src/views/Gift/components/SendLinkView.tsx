@@ -27,7 +27,7 @@ export function SendLinkView({
 
 Please connect your wallet to claim it!
 
-Alternatively, you can manually enter the code %code% on VeiluxPay wallet to claim.`,
+Alternatively, you can manually enter the code %code% on HexPay wallet to claim.`,
     {
       code,
       claimLink,

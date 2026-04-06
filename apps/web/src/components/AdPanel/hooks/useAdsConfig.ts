@@ -26,7 +26,7 @@ const getAdsConfigs = (t: ContextApi['t'], isMobile: boolean): AdsCampaignConfig
         img: `${ASSET_CDN}/solana/promotions/add_liquidity.png`,
         texts: [
           {
-            text: t('Provide Liquidity on Solana VeiluxPay'),
+            text: t('Provide Liquidity on Solana HexPay'),
           },
         ],
         btn: {

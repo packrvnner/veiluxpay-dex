@@ -23,7 +23,7 @@ export interface SolanaTokenListConfig {
   parser: Parser
 }
 
-// Filter out VeiluxPay list since it's always enabled
+// Filter out HexPay list since it's always enabled
 export const convertRawTokenInfoIntoSPLToken = (token: TokenInfo) => {
   return new SPLToken({
     address: token.address,
@@ -57,9 +57,9 @@ export const convertSPLTokenIntoRawTokenInfoUserAdded = (token: SPLToken): Token
 export const SOLANA_LISTS_CONFIG: Record<TokenListKey, SolanaTokenListConfig> = {
   [TokenListKey.PANCAKESWAP]: {
     key: TokenListKey.PANCAKESWAP,
-    name: 'VeiluxPay',
+    name: 'HexPay',
     logoURI: 'https://pancakeswap.finance/logo.png',
-    description: 'VeiluxPay Token List',
+    description: 'HexPay Token List',
     apiUrl: 'https://tokens.pancakeswap.finance/pancakeswap-solana-default.json',
     parser: (data: { tokens: TokenInfo[] }) => {
       return (data?.tokens ?? []).map(convertRawTokenInfoIntoSPLToken)
@@ -95,5 +95,5 @@ export const SOLANA_LISTS_CONFIG: Record<TokenListKey, SolanaTokenListConfig> = 
   },
 }
 
-// Filter out VeiluxPay list since it's always enabled
+// Filter out HexPay list since it's always enabled
 export const SOLANA_LISTS = Object.values(SOLANA_LISTS_CONFIG)

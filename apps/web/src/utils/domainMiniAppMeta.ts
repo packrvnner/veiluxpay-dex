@@ -25,10 +25,10 @@ export const MINI_APP_EMBED_BY_HOST: Record<string, string> = {
     version: '1',
     imageUrl: 'https://assets.pancakeswap.finance/web/og/v2/hero.jpg',
     button: {
-      title: 'Open VeiluxPay',
+      title: 'Open HexPay',
       action: {
         type: 'launch_frame',
-        name: 'VeiluxPay',
+        name: 'HexPay',
         url: 'https://pancakeswap.finance',
         splashImageUrl: 'https://pancakeswap.finance/logo.png',
         splashBackgroundColor: '#0f1220',
